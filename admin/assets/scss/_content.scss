@@ -1,0 +1,399 @@
+/*----------------------------------------*/
+/*  02. Content SCSS
+/*----------------------------------------*/
+.content {
+  background: #FFA3000D;
+  padding: 80px 130px;
+
+  &__box-shadow {
+    box-shadow: 0px 3px 10px rgba(119, 119, 119, 0.1);
+  }
+
+  .overview__item {
+    display: flex;
+    justify-content: space-between;
+    background: $white;
+    padding: 30px 40px;
+    align-items: center;
+    box-shadow: 0px 3px 10px rgba(119, 119, 119, 0.1);
+    @include transition();
+
+    &:hover {
+      box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    &-title {
+      h2 {
+        margin: 0;
+        line-height: 1;
+      }
+
+      span {
+        font-size: 18px;
+        margin-top: -5px;
+        display: block;
+      }
+    }
+  }
+
+  .grow__area_item {
+    padding-left: 15px;
+    height: 400px;
+  }
+
+
+  .grow__content {
+    margin-right: 20px;
+
+
+    li {
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0.45px;
+      margin-bottom: 2px;
+      font-family: Arial;
+
+      span {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        display: inline-block;
+      }
+
+      &:nth-child(1) {
+        color: $color-9;
+
+        span {
+          background: $color-9;
+        }
+      }
+
+      &:nth-child(2) {
+        color: $color-10;
+
+        span {
+          background: $color-10;
+        }
+      }
+
+      &:nth-child(3) {
+        color: $color-11;
+
+        span {
+          background: $color-11;
+        }
+      }
+
+      &:nth-child(4) {
+        color: $color-12;
+
+        span {
+          background: $color-12;
+        }
+      }
+
+    }
+  }
+
+  .listtopie-svg path {
+    fill-opacity: 1 !important;
+  }
+
+  .listtopie-initialized {
+    width: 265px;
+    height: 265px !important;
+    transform: none;
+    position: absolute;
+    top: 120px;
+  }
+
+  .country-list {
+    font-size: 16px;
+    color: $color-13;
+
+  }
+
+  .grow__country-list {
+    margin-top: 65px;
+
+    li {
+      color: $color-13;
+      font-size: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+
+      .round {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin-right: 13px;
+        margin-top: 4px;
+      }
+
+      &:nth-child(1) .round {
+        border: 2px solid $color-14;
+      }
+
+      &:nth-child(2) .round {
+        border: 2px solid $color-11;
+      }
+
+      &:nth-child(3) .round {
+        border: 2px solid $color-10;
+        background: rgba(0, 162, 255, 0.5);
+      }
+
+      &:nth-child(4) .round {
+        border: 2px solid $color-14;
+      }
+
+      .percentage {
+        color: $color-13;
+        margin-left: 16px;
+      }
+    }
+  }
+
+  .grow__map-area {
+    background: $color-16;
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  .grow_map-top {
+    text-align: center;
+
+    span {
+      color: $white;
+      font-size: 18px;
+      letter-spacing: 0.3px;
+      position: relative;
+      padding-left: 17px;
+    }
+
+    span::before {
+      content: '';
+      top: 50%;
+      left: 0;
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      transform: translateY(-70%);
+      border: 2px solid $white;
+      border-radius: 50%;
+    }
+  }
+
+
+  .grow__map-middle {
+    text-align: center;
+    margin-top: 15px;
+
+    span {
+      color: $white;
+      font-size: 18px;
+    }
+
+    h5 {
+      color: $white;
+    }
+  }
+
+
+
+  // Total CSS 
+  .total__item {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  .total__item-title {
+    h2 {
+      margin: 0;
+      line-height: 1;
+      font-size: 30px;
+    }
+
+
+
+    span {
+      color: $color-13;
+      font-size: 15px;
+    }
+  }
+
+  .total__item-icon {
+    margin-right: 20px;
+  }
+
+
+
+  .total__rating-item {
+    display: flex;
+    background: $white;
+    padding: 27px;
+  }
+
+  .total__rating-top {
+    display: flex;
+  }
+
+  .total__rating-icon {
+    margin-right: 20px;
+  }
+
+  .total__rating-top-title h2 {
+    font-size: 30px;
+    color: $color-18;
+    margin-bottom: 0;
+  }
+
+  .total__rating-top-title {
+    margin-left: 30px;
+  }
+
+  .total__rating-bottom h2 {
+    color: $color-13;
+    font-size: 16px;
+  }
+
+  .recent__order-days {
+    margin-left: 20px;
+  }
+
+  .nice-select span {
+    color: $color-5;
+  }
+
+  .nice-select::after {
+    border-bottom: 2px solid $color-5;
+    border-right: 2px solid $color-5;
+  }
+
+
+  .recent__order-list-table {
+    table {
+      width: 100%;
+      border-spacing: 30px;
+    }
+
+    thead,
+    tbody {
+      .tr-spacer {
+        height: 20px;
+        box-shadow: none;
+      }
+    }
+
+    thead {
+      tr {
+        border: 0;
+
+        .num-list {
+          margin-left: 15px;
+        }
+
+        th {
+          color: #464A53 !important;
+          font-weight: 400;
+          font-size: 18px;
+          border-bottom-width: 0;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        background: $white;
+        box-shadow: 0px 3px 10px rgba(119, 119, 119, 0.1);
+        @include transition();
+
+        &:hover {
+          box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1)
+        }
+
+        td {
+          padding-top: 25px;
+          padding-bottom: 25px;
+
+          .num {
+            padding-left: 15px;
+            font-size: 18px;
+            color: $color-13;
+          }
+
+          .name {
+            font-size: 16px;
+            color: #6A707E;
+          }
+
+          .date {
+            color: $color-6;
+          }
+
+          .location {
+            color: $color-16;
+          }
+
+          .amount {
+            color: $color-13;
+          }
+
+          .r-p {
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            line-height: 43px;
+            text-align: center;
+            border-radius: 50%;
+            margin-right: 11px;
+            color: $white;
+          }
+        }
+
+      }
+
+
+    }
+
+
+
+
+  }
+
+  // Breadcrumb SCSS
+  .content__box-list {
+    text-align: right;
+    margin-top: 30px;
+
+    li {
+      display: inline-block;
+
+      a {
+        width: 35px;
+        height: 35px;
+        background: $white;
+        display: block;
+        line-height: 35px;
+        text-align: center;
+        border-radius: 50%;
+        color: $color-6;
+        font-size: 15px;
+      }
+
+
+
+      &.active a,
+      &:hover a {
+        background: $color-16;
+        color: $white;
+      }
+    }
+  }
+
+
+}

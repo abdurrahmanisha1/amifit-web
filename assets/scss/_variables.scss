@@ -1,0 +1,74 @@
+/*----------------------------------------*/
+/*  Variables SCSS
+/*----------------------------------------*/
+// Font Family
+$nunito-sans: 'Nunito Sans',
+sans-serif;
+$neue-metana-bold: 'Neue Metana Bold',
+sans-serif;
+$neue-metana-regular: 'Neue Metana Regular',
+sans-serif;
+
+
+// Custom Font 
+@font-face {
+  font-family: $neue-metana-bold;
+  src: url(../fonts/NeueMetana-Bold.otf);
+  src: url(../fonts/NeueMetana-Bold.ttf);
+  src: url(../fonts/NeueMetana-Bold.woff);
+  src: url(../fonts/NeueMetana-Bold.woff2);
+}
+
+@font-face {
+  font-family: $neue-metana-regular;
+  src: url(../fonts/NeueMetana-Regular.otf);
+}
+
+// Colors ---------------
+$body-color: #62646a;
+$theme-color: #FFA300;
+$black: #000000;
+$dark-black: #222325;
+
+$orange: #ffbe5b;
+$light-gray: #b5b6ba;
+$light-dark: #404145;
+$gray-dark-2: #74767e;
+$white: #fff;
+$light-white: #e4e5e7;
+
+
+
+$color-1: #485BF7;
+$color-2: #8446D4;
+$color-3: #E56E42;
+$color-4: #242D42;
+$box-gradient-1: linear-gradient(90deg, #fff 0%, #4d4d4d 0%, rgba(176, 176, 176, 0.85) 100%);
+$orange-2: #F2441D;
+$gray: #71717165;
+$black-2: #333333;
+$black-3: #666666;
+$red-1 : #FB3F4A;
+
+
+// Responsive Variables
+$xxl: ' screen and (min-width: 1600px)';
+
+// Min Width 1200 px 
+$laptop: ' screen and (max-width: 1600px)';
+
+// Min Width 992px 
+$lg : ' screen and (max-width: 1199px)';
+
+// Min Width 768px
+$md:' screen and (max-width: 991px)';
+
+// Min Width 575px
+$sm: 'screen and (max-width: 767px)';
+
+// Min Widht 425px
+$xs:'(max-width: 575px)';
+
+
+// Min Widht 425px
+$xxs:'(max-width: 425px)';

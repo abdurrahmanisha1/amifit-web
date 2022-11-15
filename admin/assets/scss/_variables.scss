@@ -1,0 +1,89 @@
+/*----------------------------------------*/
+/*  Variables SCSS
+/*----------------------------------------*/
+
+// Fonts 
+@font-face {
+    font-family: circular;
+    src: url(../fonts/circular-std-medium-500.ttf);
+}
+
+@font-face {
+    font-family: Arial;
+    src: url(../fonts/Arial.ttf);
+}
+
+// Colors ---------------
+$white: #fff;
+$white-2: #E8EBF7;
+$white-3: #F3F3F3;
+$white-4: #E9EEFF;
+$white-5: #F1F1F1;
+$black: #000;
+$black-2: rgba(0, 0, 0, 0.507);
+$gray: #727272;
+$gray-2: #5B5B5B;
+$gray-3: #757575;
+$gray-4: #969BA0;
+$gray-5: #616161;
+$gray-6: #8D8D8D;
+$color-1: #0B2A97;
+$color-2: #FF9900;
+$color-3: #67AAE6;
+$color-4: #1D8FF7;
+$color-5: #464A53;
+$color-6: #ABAFB3;
+$color-7: #FF5274;
+$color-8: #F3B622;
+$color-9: #71D875;
+$color-10: #00A2FF;
+$color-11: #FF9800;
+$color-12: #FFC107;
+$color-13: #6A707E;
+$color-14: #673AB7;
+$color-15: #71D875;
+$color-16: #7F63F4;
+$color-17: #F48665;
+$color-18: #FFAC3E;
+$color-19: #DDDFE1;
+$color-20: #00AFF0;
+$color-21: #FE3153;
+$color-22: #FFDD66;
+$color-23: #35B968;
+$color-24: #FDAE3B;
+$color-25: #FF8423;
+$color-26: #D57FF8;
+$color-27: #DC4139;
+$color-28: #EEF0F0;
+$color-29: #FCC011;
+
+
+
+
+// Responsive Variables
+$xxl: ' screen and (min-width: 1600px)';
+
+// Min Width 1200 px 
+$x-laptop: ' screen and (max-width: 1860px)';
+
+// Min Width 1200 px 
+$laptop: ' screen and (max-width: 1600px)';
+
+// Min Width 992px 
+$lg : ' screen and (max-width: 1199px)';
+
+$m-md: ' screen and (min-width: 991px)';
+
+// Min Width 768px
+$md: ' screen and (max-width: 991px)';
+
+// Min Width 575px
+$sm: 'screen and (max-width: 767px)';
+
+// Min Widht 425px
+$xs: '(max-width: 575px)';
+
+
+
+// Min Widht 425px
+$xxs: '(max-width: 425px)';

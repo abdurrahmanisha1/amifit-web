@@ -1,0 +1,51 @@
+/*----------------------------------------*/
+/*  06. experience CSS
+/*----------------------------------------*/
+.experience{
+    &__item{
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient( #3D3B3147, #000000bf);
+        }
+        &-img{
+            img {
+                min-height: 748px;
+            }
+        }
+        &-content{
+            @include transition();
+            bottom: 25px;
+            left: 0;
+            right: 0;
+            h3 {
+                font-size: 57px;
+                font-style: italic;
+                color: $white;
+                margin-bottom: 17px;
+                span{
+                    color: $white;
+                }
+              }
+              p {
+                text-transform: uppercase;
+                font-style: italic;
+                font-size: 28px;
+              }
+        }
+        &:hover{
+            .experience{
+                &__item-content{
+                    bottom: 100px;
+                }
+                &__item-img img{
+                    @include transform(scale(1.03));
+                }
+            }
+        }
+    }
+}

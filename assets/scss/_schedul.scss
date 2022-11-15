@@ -1,0 +1,114 @@
+/*----------------------------------------*/
+/*  16. Schedul SCSS
+/*----------------------------------------*/
+
+.bottom{
+    &__schedul{
+
+        &.open{
+            visibility: visible;
+            opacity: 1;
+            .bottom{
+                &__schedul-inner{
+                    bottom: 0%;
+                }
+            }
+        }
+    }
+    &__schedul-inner {
+        position: fixed;
+        bottom: -200%;
+        right: 0;
+        background: #FFA300;
+        padding: 50px 90px;
+        z-index: 1001;
+        height:auto;
+        overflow: scroll;
+        transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        scrollbar-width: none;
+        left: 0;
+        width: 100%;
+        max-height: 700px;
+    }
+    &__schudul-left h2 {
+        color: $black;
+        font-size: 40px;
+    }
+    &__calender-box{
+        .pignose-calendar {
+            width: 100%;
+            max-width: 100%;
+            background-color: $theme-color;
+            border: 1px solid $theme-color;
+            font-size: 100%;
+            margin: 0 auto;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            margin-top: -46px;
+
+            .pignose-calendar-top {
+                background-color: $theme-color;
+                border-bottom: 0;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                padding: 48px 0;
+                a{
+                    float: right !important;
+                }
+                .pignose-calendar-top-prev{
+                    @include transform(translateX(-64px));
+                    margin-top: 1px;
+
+                }
+                .pignose-calendar-top-next{
+                    margin-right: -50px;
+                }
+                .pignose-calendar-top-date {
+                    width: auto;
+                    height: auto;
+                    text-align: start; 
+                }
+
+                .pignose-calendar-top-year, .pignose-calendar-top-month{
+                    font-size: 24px;
+                    color: $black-2;
+                    margin-bottom: 3px;
+                    line-height: 1;
+                    font-weight: 700;
+                }
+
+
+            }
+            .pignose-calendar-header{
+                padding: 0;
+                margin: 0;
+                .pignose-calendar-week{
+                    color: $black-2 !important;
+                    float: left;
+                    width: 63px;
+                    height: 60px;
+                    line-height: 60px;
+                }
+            }
+            .pignose-calendar-body{
+                padding: 5px;
+                .pignose-calendar-unit{
+                        height: 64px;
+                        width: 64px;
+                        text-align: center;
+                        line-height: 64px;
+                    a{
+                        color: $black-3;
+                    }
+
+                }
+                .pignose-calendar-unit-active a {
+                    background: $red-1;
+                    color: $white;
+                    box-shadow: none;
+                }
+            }
+
+        }
+    }
+}

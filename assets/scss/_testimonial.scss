@@ -1,0 +1,80 @@
+/*----------------------------------------*/
+/*  07. Testimonial CSS
+/*----------------------------------------*/
+.testimonial{
+    &__item-box{
+        padding-top: 48px;
+        padding-left: 30px;
+        padding-right: 130px;
+        padding-bottom: 48px;
+        span{
+            font-size: 16px;
+            font-style: italic;
+            color: #fff;
+        }
+        h3, .count{
+            font-size: 57px;
+            color: #fff;
+          }
+    }
+    .t-box-1 {
+        top: 140px;
+        left: 207px;
+        color: #fff;
+        z-index: 1;
+        background: $box-gradient-1;
+      }
+      .t-box-2 {
+        bottom: 14px;
+        left: 225px;
+        z-index: 1;
+        background: $box-gradient-1;
+    }
+    .t-box-3 {
+        top: 79px;
+        right: 209px;
+        background: $box-gradient-1;
+    }
+    .t-box-bg {
+        bottom: -38px;
+        right: 266px;}
+    .t-box-4 {
+        width: 665px;
+        bottom: 99px;
+        right: 143px;
+        background: #ffa5002e;
+        padding: 104px 37px 30px 60px;
+        .quate-box-inner {
+            position: relative;
+            img {
+                position: absolute;
+                top: -125px;
+                left: 0;
+                width: 45px !important;
+              }
+              p {
+                margin-bottom: 50px;
+                font-size: 16px;
+                line-height: 1.5;
+              }
+              h3 {
+                font-size: 18px;
+                margin: 0;
+              }
+          }
+  }
+
+  &__slider{
+    .owl-nav{
+        div {
+            top: 50%;
+            left: 100px;
+            transform: translateX(-50%);
+        }
+        div.owl-next {
+            right: 100px;
+            left: auto;
+        }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+/*----------------------------------------*/
+/*  04. Section Title SCSS
+/*----------------------------------------*/
+
+.section {
+  &__title {
+    &-big {
+      h2 {
+        font-size: 60px;
+      }
+    }
+
+    h2 {
+      padding-right: 50px;
+    }
+
+    .arrow {
+      cursor: pointer;
+      margin-top: -13px;
+
+      a {
+        font-size: 42px;
+        position: relative;
+        color: $white;
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 71px;
+          height: 3px;
+          background: $white;
+          top: 56%;
+          transform: translateY(-50%);
+          left: -7px;
+        }
+
+        i {
+          margin-left: 40px;
+          font-size: 26px;
+        }
+
+      }
+
+      &:hover {
+        padding-left: 25px;
+      }
+    }
+
+
+    &-small {
+      h3 {
+        padding-right: 50px;
+        color: $white;
+        font-weight: 400;
+        font-style: normal;
+        font-family: $neue-metana-regular;
+
+      }
+
+      .arrow-small {
+        a {
+          color: $white;
+        }
+      }
+    }
+
+
+  }
+}

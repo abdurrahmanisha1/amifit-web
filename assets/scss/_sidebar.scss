@@ -1,0 +1,196 @@
+/*----------------------------------------*/
+/*  12. Sidebar CSS
+/*----------------------------------------*/
+.sidebar {
+    &.open {
+        visibility: visible;
+        opacity: 1;
+
+        .sidebar__inner {
+            right: 0;
+        }
+    }
+
+    &__open-btn {
+        position: fixed;
+        top: 250px;
+        right: 0px;
+        background: $theme-color;
+        z-index: 500;
+        width: 77px;
+        height: 112px;
+        line-height: 112px;
+        text-align: center;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        cursor: pointer;
+    }
+
+
+    .sidebar__inner-content {
+        padding-bottom: 140px;
+    }
+
+    &__inner {
+        position: fixed;
+        top: 0;
+        right: -150%;
+        width: 650px;
+        background: $theme-color;
+        padding: 50px 90px;
+        z-index: 1001;
+        height: 100%;
+        overflow: scroll;
+        transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+        &-content {
+            p {
+                color: $black
+            }
+        }
+
+        &-top {
+            border-bottom: 2px solid $gray;
+            padding-bottom: 35px;
+            margin-bottom: 35px;
+
+            h3 {
+                color: $black;
+                font-size: 27px;
+            }
+
+            &-img {
+                margin-left: 30px;
+            }
+
+            h2 {
+                color: $black;
+                font-size: 33px;
+
+                img {
+                    margin-right: 11px;
+                }
+
+                span {
+                    font-size: 23px;
+                    color: black;
+                    text-transform: lowercase;
+                    margin-right: 3px;
+                }
+            }
+        }
+
+
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            width: 0;
+            /* Remove scrollbar space */
+            background: transparent;
+            /* Optional: just make scrollbar invisible */
+        }
+
+        /* Optional: show position indicator in red */
+        &::-webkit-scrollbar-thumb {
+            background: transparent;
+        }
+
+
+        &-form {
+            input {
+                border: 2px solid $black;
+                height: 50px;
+                width: 283px;
+                padding: 10px;
+                margin: 12px 0;
+
+                &::-moz-placeholder {
+                    font-size: 16px;
+                    opacity: 1;
+                    color: $black;
+                }
+
+                &::placeholder {
+                    font-size: 16px;
+                    opacity: 1;
+                    color: $black;
+                }
+            }
+
+            .email-box {
+                margin-top: 23px;
+                display: flex;
+                align-items: center;
+
+                button {
+                    font-size: 16px;
+                    background: $black;
+                    border: none;
+                    outline: none;
+                    color: $theme-color;
+                    padding: 13px;
+                }
+            }
+        }
+
+
+
+        .nice-select {
+            width: 283px;
+            border: 2px solid $black;
+            padding: 6px 5px;
+            height: auto;
+            border-radius: 0;
+
+            &::after {
+                border-bottom: 3px solid $black;
+                border-right: 3px solid $black;
+                height: 17px;
+                margin-top: -10px;
+                right: 20px;
+                width: 17px;
+            }
+
+
+            span {
+                color: $black;
+                font-weight: normal;
+                text-transform: capitalize;
+                font-size: 16px;
+            }
+
+
+            .list {
+                width: 101%;
+                margin-top: 0;
+                border-radius: 0;
+                box-shadow: 0px;
+                border: 2px solid $black;
+                border-top: none;
+                outline: 0;
+                margin-left: -2px;
+            }
+        }
+
+        &-social {
+            margin-top: 45px;
+
+            span {
+                margin-right: 10px;
+                color: $black;
+            }
+
+            li {
+                display: inline-block;
+                margin: 0 3px;
+
+                a {
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                    color: $black;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+/*----------------------------------------*/
+/*  05. About SCSS
+/*----------------------------------------*/
+
+.about{
+    &__img{
+          &-main{
+            z-index: 100;
+            position: relative;
+          }
+          &-grid{
+            left: 55px;
+            top: 0;
+            width: 440px;
+            z-index: 50;
+            transform: translateY(93%);
+            height: 288px;
+          }
+          &-rectangle{
+            right: 54px;
+            top: 50%;
+            transform: translateY(-27%);
+            top: 50%;
+            z-index: -1;
+          }
+          &-cricle{
+            top: 56px;
+            left: 0;
+            right: -279px;
+            margin: auto;
+            transform: translateY(40%);
+            z-index: 60;
+            text-align: center;
+          }
+    }
+    &__content {
+      padding-left: 35px;
+      padding-right: 80px;
+      &-video h6 {
+        margin-left: 27px;
+        color: $white;
+      }
+    }
+}

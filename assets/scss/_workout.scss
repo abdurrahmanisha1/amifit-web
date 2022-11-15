@@ -1,0 +1,25 @@
+/*----------------------------------------*/
+/*  08. Workout CSS
+/*----------------------------------------*/
+.workout{
+    &__item{
+        p{
+            margin-top: 30px;
+        }
+    }
+    &__slider{
+        .owl-nav{
+            div {
+                top: 38%;
+                left: -91px;
+                transform: translateX(-50%);
+            }
+            div.owl-next {
+                right: -163px;
+                left: auto;
+            }
+        }
+    }
+
+}
+
