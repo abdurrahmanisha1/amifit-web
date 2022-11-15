@@ -1178,7 +1178,7 @@ button.a-btn {
   padding: 50px 90px;
   z-index: 1001;
   height: 100%;
-  overflow: scroll;
+  overflow:visible;
   transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   scrollbar-width: none;
   /* Optional: show position indicator in red */
