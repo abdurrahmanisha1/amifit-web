@@ -1238,7 +1238,7 @@ button.a-btn {
   color: #000000;
 }
 .sidebar__inner-form .email-box {
-  margin-top: 23px;
+  margin-top: 0px;
   display: flex;
   align-items: center;
 }
@@ -1253,7 +1253,7 @@ button.a-btn {
 .sidebar__inner .nice-select {
   width: 283px;
   border: 2px solid #000000;
-  padding: 6px 5px;
+  padding: 2.8px 5px;
   height: auto;
   border-radius: 0;
 }
